@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        font-size: 45px;
+      }
+
+      .choose-color {
+        font-size: 40px;
+      }
+
+      .color-preview {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+        margin-top: 5px;
+      }
+
+      .history-container {
+        list-style: none;
+      }
+
+      .history-container li {
+        font-size: 24px;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="header">Interactive Color Picker</h1>
+    <label for="color" class="choose-color">Choose color</label>
+    <input type="color" id="color" />
+    <div class="color-preview"></div>
+    <h2>Color history</h2>
+    <ul class="history-container"></ul>
+    <button id="clearHistoryBtn">Clear history</button>
+    <script src="main.js"></script>
+  </body>
+</html>
